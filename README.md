@@ -30,3 +30,8 @@ The jar is executed using `java -jar trafficlight-api.jar`. I run the applicatio
  
     $nohup java -jar jenkins-trafficlight.jar 1>/dev/null 2>&1 &
 
+Invoke the API (port 8080) by sending GET or POST HTTP requests with the JSON body:
+
+    {"lights":"FLASH_ALL"}
+    
+The valid settings are: GREEN, AMBER, FLASHING_AMBER, RED, ALLOFF, ALLON, FLASH_ALL.
